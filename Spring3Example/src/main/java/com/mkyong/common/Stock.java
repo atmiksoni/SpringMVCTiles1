@@ -1,5 +1,6 @@
 package com.mkyong.common;
 
+import javax.persistence.Cacheable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -8,6 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 
 
 
@@ -15,6 +19,8 @@ import javax.persistence.UniqueConstraint;
 
 @Entity
 @Table(name="stock")
+@Cacheable
+@Cache(usage=CacheConcurrencyStrategy.NONE)
 public class Stock {
 	
 	@Id
