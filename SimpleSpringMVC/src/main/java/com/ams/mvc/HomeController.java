@@ -24,7 +24,7 @@ public class HomeController {
 	 */
 	 @RequestMapping(value = {"/", "/home"}, method = RequestMethod.GET)
 	    public String home(Locale locale, Model model) {
-	        logger.info("Welcome home! The client locale is {}.", locale);
+	        logger.info("Welcome home! The client locale is  dfd {}.", locale);
 	         
 	        Date date = new Date();
 	        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
@@ -39,7 +39,8 @@ public class HomeController {
 	@RequestMapping(value="/welcome.htm", method = RequestMethod.GET)
 	public String welcome(Model model)
 	{
-		System.out.println("inside welcome ");
+		logger.info("inside welcome ");
+		
 		return "welcome";
 	}
 	
