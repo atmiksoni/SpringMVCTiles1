@@ -11,7 +11,7 @@
             <h1>Home page !</h1>
  
             <p>The time on the server is ${serverTime}.</p>
-            <p><a href="welcome.htm">Click here to See Welcome Message... </a></P>
+            <p><a href="welcome.htm">Click here to See Welcome git Message... </a></P>
         </div>
  
  
